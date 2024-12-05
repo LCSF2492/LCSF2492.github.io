@@ -8,37 +8,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dicey: Dice It Right, Every Time.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
-    <header>
-      <a href="index.html">
-        <img src="images/logo.png" alt="Company Logo" />
-      </a>
-    </header>
-    <nav>
-      <ul>
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="team.html">Our Team</a></li>
-        <li><a href="specials.html">Specials</a></li>
-        <li><a href="training.html">Training</a></li>
-        <li><a href="media.html">Media</a></li>
-        <li><a href="faqs.html">FAQs</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
+  <body class="raleway-regular bg-black text-white">
+    <div id="container" class="">
+      <header id="logo" class="mar-l">
+        <a href="index.html" rel="noopener noreferrer">
+          <img src="images/logo.png" alt="Company Logo" />
+        </a>
+      </header>
+      <nav id="desktop" class="mar-r">
+        <ul>
+          <li class="active">
+            <a href="index.html">Home</a>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="specials.html">Specials</a></li>
+          <li><a href="training.html">Training</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li class="contact-link"><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
 
-    <main></main>
+      <main id="hero-section">
+        <div class="content mar-l">
+          <h1>Welcome to <strong class="cursor-pointer">Dicey</strong></h1>
+          <h2>Your Ultimate Vegetable Dicing Companion!</h2>
+          <p>
+            Transform your cooking with
+            <strong class="text-primary">Dicey!</strong> Our innovative
+            vegetable dicer makes meal prep quick and easy, so you can enjoy
+            fresh, delicious meals in no time. Let’s make healthy eating fun and
+            effortless!
+          </p>
+          <div id="cta"">
+            <a id="contact-cta" href="contact.html">&#x2706; Make a Call!</a>
+            <a id="about-cta" href="about.html">Join Us! &#x2192</a>
+          </div>
+        </div>
+      </main>
 
-    <footer>
-      <p>
-        &copy; Copyright 2099. All Rights Reserved. <br />
+      <footer class="mar-l mar-r">
+        <p>&copy; Copyright 2024. All Rights Reserved.</p>
+        <span>| </span>
+        <p>Sujan Parajuli C0950051</p>
+        <span> | </span>
         <a href="mailto:c0950051@mylambton.ca"> Request Information </a>
-        <br />
-        Sujan Parajuli &nbsp; &nbsp; C0950051
-      </p>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
