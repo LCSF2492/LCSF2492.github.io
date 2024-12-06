@@ -5,7 +5,7 @@ section {
 }
 
 section p {
-  max-width: 60%;
+  /* max-width: 60%; */
 }
 
 section h1,
@@ -15,7 +15,7 @@ h2 {
 
 #about-hero-section {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../images/reference/about-hero-2.jpeg");
+    url("../images/about-hero-2.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -41,22 +41,6 @@ h2 {
   background: var(--secondary);
 }
 
-.underline-effect {
-  position: relative;
-}
-
-.underline-effect::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 2%;
-  height: 10%;
-  background-color: var(--accent);
-  border-radius: 5px;
-  z-index: 1;
-  transition: all 0.5s ease;
-}
 
 #story-section .content {
   flex: 1;
@@ -123,4 +107,3 @@ section .img-text-wrapper {
   background-color: var(--accent);
 }
 
-/* guarantee section */
