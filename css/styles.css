@@ -4,12 +4,19 @@ Student ID: C0950051
 */
 
 :root {
-  --olivine: #95b95bff;
+  /* --olivine: #95b95bff;
   --moss-green: #84985fff;
   --mindaro: #c9e594ff;
   --light-mindaro: #e9f5d4;
   --sage: #c0cba3ff;
-  --mindaro-2: #e6faa2ff;
+  --mindaro-2: #e6faa2ff; */
+
+  --primary: #282923;
+  --secondary: #ffffff;
+  --accent: #95b95b;
+  --accent-2: #d3c428;
+  /* --accent-2: #5C6E09; */
+  --accent-3: #f0c753;
 
   /* Neutral Colors */
   --white: #ffffff;
@@ -20,10 +27,10 @@ Student ID: C0950051
   --gray-900: #212121;
 
   /* UI Colors */
-  --success-color: #4caf50;
+  /* --success-color: #4caf50;
   --error-color: #f44336;
   --warning-color: #ffc107;
-  --info-color: #2196f3;
+  --info-color: #2196f3; */
 }
 
 /* Reset defaults for all elements */
@@ -46,6 +53,13 @@ Student ID: C0950051
   margin-right: 70px !important;
 }
 
+.pd-l {
+  padding-left: 70px !important;
+}
+.pd-r {
+  padding-right: 70px !important;
+}
+
 .raleway-regular {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
@@ -61,29 +75,42 @@ Student ID: C0950051
 }
 
 h1 {
-  font-weight: 700;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+p {
+  font-weight: 400;
 }
 
 /* Colors */
 
+.text-accent {
+  color: var(--accent);
+}
+
 .bg-primary {
-  background-color: var(--olivine);
+  background-color: var(--primary);
 }
 
 .bg-secondary {
-  background-color: var(--mindaro);
+  background-color: var(--secondary);
 }
 
 .text-secondary {
-  color: var(--mindaro);
+  color: var(--secondary);
+}
+
+.text-white {
+  color: var(--white) !important;
 }
 
 .text-primary {
-  color: var(--olivine);
+  color: var(--primary);
 }
 
 .border-primary {
-  border-color: var(--olivine);
+  border-color: var(--primary);
 }
 
 .bg-black {
@@ -91,15 +118,15 @@ h1 {
 }
 
 .text-black {
-  color: #282923;
+  color: var(--primary);
 }
 
 .bg-white {
-  background-color: #ffffff;
+  background-color: var(--secondary);
 }
 
 .text-white {
-  color: #ffffff;
+  color: var(--secondary);
 }
 
 /* Logo Style */
@@ -108,7 +135,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #282923;
+  background-color: var(--primary);
 }
 
 #logo img {
@@ -140,28 +167,28 @@ nav ul li {
 nav ul li a {
   padding: 10px 10px;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--white);
   font-weight: 600;
   transition: 100ms ease;
 }
 
 nav .active a {
-  color: var(--olivine) !important;
+  color: var(--accent) !important;
 }
 
 nav ul li a:hover {
-  color: var(--olivine);
+  color: var(--accent);
 }
 
 .contact-link a {
-  background-color: var(--olivine);
-  border: 2px solid var(--olivine);
+  background-color: var(--accent);
+  border: 2px solid var(--accent);
   border-radius: 10px;
 }
 
 .contact-link a:hover {
   background-color: transparent;
-  color: var(--olivine);
+  color: var(--accent);
 }
 
 /* Hero Section */
@@ -207,7 +234,7 @@ nav ul li a:hover {
   left: 0;
   width: 100%;
   height: 2%;
-  background-color: var(--olivine);
+  background-color: var(--accent);
   border-radius: 5px;
   z-index: 1;
   transition: all 0.5s ease;
@@ -241,18 +268,20 @@ nav ul li a:hover {
 }
 
 #contact-cta {
-  background-color: var(--olivine);
-  border: 2px solid var(--olivine);
+  background-color: var(--accent);
+  border: 2px solid var(--accent);
 }
 
 #about-cta {
   background-color: transparent;
-  border: 2px solid var(--olivine);
-  color: #282923 !important;
+  border: 2px solid var(--accent-2);
+  color: var(--white);
+  text-shadow: 2px 2px 1px var(--gray-900);
 }
 
 #about-cta:hover {
-  background-color: var(--olivine);
+  background-color: var(--accent-2);
+  text-shadow: 0px 0px 0 #fff;
   color: var(--white) !important;
 }
 
@@ -269,32 +298,38 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  clear: both;
+}
+
+footer p {
+  font-size: 18px;
 }
 
 a {
-  color: var(--mindaro);
+  color: var(--accent);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--olivine);
+  color: var(--accent-2);
 }
 
 /* Selection Style */
 ::-webkit-selection {
-  background-color: var(--olivine);
+  background-color: var(--accent);
   color: var(--white);
 }
 ::-moz-selection {
-  background-color: var(--olivine);
+  background-color: var(--accent);
   color: var(--white);
 }
 ::-ms-selection {
-  background-color: var(--olivine);
+  background-color: var(--accent);
   color: var(--white);
 }
 
 ::selection {
-  background-color: var(--olivine);
+  background-color: var(--accent);
   color: var(--white);
 }
+
