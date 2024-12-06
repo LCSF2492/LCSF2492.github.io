@@ -7,7 +7,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dicey: Dice It Right, Every Time.</title>
+    <title>Dicey: Media</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,8 +15,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media.css" />
 
-    <!-- favicon -->
     <link
       rel="icon"
       type="image/png"
@@ -41,38 +41,61 @@
       </header>
       <nav id="desktop" class="mar-r">
         <ul>
-          <li class="active">
+          <li>
             <a href="index.html">Home</a>
           </li>
           <li><a href="about.html">About</a></li>
           <li><a href="team.html">Our Team</a></li>
-          <li><a href="specials.html">Specials</a></li>
+          <li class=""><a href="specials.html">Specials</a></li>
           <li><a href="training.html">Training</a></li>
-          <li><a href="media.html">Media</a></li>
+          <li class="active"><a href="media.html">Media</a></li>
           <li><a href="faqs.html">FAQs</a></li>
           <li class="contact-link"><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
 
-      <main id="hero-section">
-        <div class="content mar-l">
-          <h1>Welcome to <strong class="cursor-pointer">Dicey</strong></h1>
-          <h1>Your Ultimate Vegetable Dicing Companion!</h1>
-          <p>
-            Transform your cooking with
-            <strong class="text-accent">Dicey!</strong> Our innovative vegetable
-            dicer makes meal prep quick and easy, so you can enjoy fresh,
-            delicious meals in no time. Let’s make healthy eating fun and
-            effortless!
-          </p>
-          <div id="cta">
-            <a id="contact-cta" href="contact.html">&#x2706; Make a Call!</a>
-            <a id="about-cta" href="about.html">About Us! &#x2192; </a>
+      <main>
+        <section id="media-top-section" class="bg-primary py-md">
+          <div class="content mar-l mar-r">
+            <div style="z-index: 1">
+              <h1 class="">
+                <span class="text-accent">Tune In:</span>
+                <br />
+                Experience the Flavor of Dicey!
+              </h1>
+              <p></p>
+            </div>
+
+            <video class="intro-video" poster="media/video-poster.jpg" controls>
+              <source src="media/intro-video.mp4" type="video/mp4" />
+            </video>
           </div>
-        </div>
+        </section>
+
+        <section id="audio-section" class="bg-secondary py-md">
+          <div class="content mar-l mar-r">
+            <h2 class="underline-effect">Listen to Our Specials</h2>
+            <p class="py-md">
+              Tune in to our exclusive audio feature,
+              <strong>"Listen to Our Special,"</strong>
+              where we delve into the incredible benefits of the Dicey Vegetable
+              Chopper. In this engaging narration, you'll discover how our
+              innovative design and cutting-edge technology can revolutionize
+              your kitchen experience. From effortless chopping to chef-quality
+              results, this special highlights everything that makes Dicey a
+              must-have tool for every cooking enthusiast. Join us as we inspire
+              you to elevate your culinary adventures and make meal preparation
+              a joy!
+            </p>
+            <audio controls>
+              <source src="media/audio.mp3" type="audio/mp3" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </section>
       </main>
 
-      <footer class="mar-l mar-r">
+      <footer class="bg-primary pd-l pd-r text-white">
         <p>&copy; Copyright 2024. All Rights Reserved.</p>
         <span>| </span>
         <p>Sujan Parajuli C0950051</p>
